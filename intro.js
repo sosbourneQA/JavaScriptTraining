@@ -18,3 +18,9 @@ if (50 < age) {
 
 
 console.log(age > 50 ? `${message}` + " old" : `${message}` + " young");
+
+
+let arr = new Array(10);
+console.log(arr);
+
+console.log();  
