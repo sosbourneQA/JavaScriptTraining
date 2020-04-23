@@ -20,3 +20,24 @@ const mouseOver = event => {
     }
 };
 tnrParagraph.addEventListener('mouseover', mouseOver);
+
+
+
+// 9.
+const mouseOut = event => {
+    event.target.style.backgroundColor = 'yellow';
+    if (event.target.textContent.indexOf('background') === -1) {
+        event.target.textContent += ', background changed on mouse out';
+    }
+    else {
+        event.target.textContent = event.target.textContent.replace("over", "out");
+    }
+}
+tnrParagraph.addEventListener('mouseout', mouseOut);
+
+
+
+// 10.
+const elementClick = event => {
+    event.target.style.backgroundColor = 'white';
+}
